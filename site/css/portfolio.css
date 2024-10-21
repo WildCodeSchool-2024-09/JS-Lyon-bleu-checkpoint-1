@@ -109,8 +109,21 @@ nav {
   color: var(--lightWildColor);
 }
 
+.projects {
+  /* attention ajout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projects a {
   color: var(--purple);
+}
+
+.projects-ex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .box {
@@ -124,6 +137,10 @@ nav {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled {
+  opacity: 50%;
 }
 
 @media screen and (max-width: 700px) {
