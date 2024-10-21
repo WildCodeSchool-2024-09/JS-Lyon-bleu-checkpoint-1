@@ -10,6 +10,10 @@
 
   --textAlign: center;
 }
+nav{
+  display: flex;
+  justify-content: space-between;
+}
 
 img {
   max-width: 100%;
@@ -21,6 +25,11 @@ h1 {
 
 p {
   padding: 0 var(--gutter);
+}
+.titre{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu {
@@ -55,6 +64,8 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display:flex;
+  flex-direction: row-reverse;
 }
 
 .skills--title {
@@ -107,4 +118,16 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (max-width:
+700px) {
+  .desktop{
+    display:none;
+  }
+
+  .skills{
+    display:flex;
+    flex-direction: column;
+  }
 }
