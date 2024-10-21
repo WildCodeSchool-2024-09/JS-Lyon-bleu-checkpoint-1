@@ -22,6 +22,7 @@
     "url": "https://github.com/WildCodeSchool/js_checkpoint1/issues"
   },
   "homepage": "https://github.com/WildCodeSchool/js_checkpoint1#readme",
+  "type": "module",
   "devDependencies": {
     "jest": "^29.7.0"
   }
