@@ -37,3 +37,25 @@ buttonName.addEventListener("click", function () {
     pinkLink[k].style.color = "var(--purple)";
   }
 });
+
+const frontDevTools = document.querySelector("#front-dev-tools");
+const buttonModify = document.createElement("button");
+frontDevTools.appendChild(buttonModify);
+buttonModify.innerText = "Modifiy";
+buttonModify.style.color = "var(--light)";
+buttonModify.style.border = "var(--borderTemplate) var(--light)";
+buttonModify.style.borderRadius = "var(--radius)";
+buttonModify.style.backgroundColor = "#F7BED5";
+buttonModify.style.marginTop = "10px";
+buttonModify.style.padding = "10px 7px";
+const frontSkill = document.querySelectorAll(".front-skill");
+
+let skillSet = null;
+
+buttonModify.addEventListener("click", function () {
+  for (let i = 0; i < frontSkill.length; i++) {
+    skillSet = prompt("What skill do you have ?");
+    frontSkill[i].innerText = skillSet;
+  }
+  buttonModify.style.backgroundColor = "var(--purple)";
+});
