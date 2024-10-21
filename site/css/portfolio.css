@@ -109,6 +109,16 @@ p {
   color: var(--purple);
 }
 
+
+/*All change I have made ! below*/
+
+#changeColorText 
+{
+  background-color: var(--lightWildColor);
+  color: var(--light);
+  border-radius: 5px;
+  border: 2px solid white;
+}
 @media only screen and (min-width: 700px) 
 {
   
@@ -133,6 +143,7 @@ p {
   {
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
   }
 }
 @media only screen and (max-width: 700px) 
