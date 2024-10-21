@@ -25,7 +25,23 @@ p {
 
 .menu {
   display: flex;
-  margin-bottom: var(--gutter);
+  justify-content:right;
+  margin-left: auto;
+  * margin-bottom: var(--gutter); */
+}
+
+.headpart {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.avatar {
+    max-width: 80%;
+    max-height: 80%
+    }
 }
 
 .desktop {
@@ -67,7 +83,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -108,3 +124,18 @@ p {
 .purple-text {
   color: var(--purple);
 }
+  @media screen and (max-width: 700px) {
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+     .skills {
+      padding: auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+  
+    }
+  }
