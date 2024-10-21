@@ -26,7 +26,9 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  // Your code here !
+  const result = [];
+
+  return result;
 }
 
 module.exports = findSeniors;
