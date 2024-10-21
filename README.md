@@ -63,3 +63,5 @@ _Remarque : les instructions pour cette partie du checkpoint se trouvent dans u
 Suis les instructions dans [ce fichier](./site/home.html) (situées dans le fichier `home.html` à l'intérieur du répertoire `site` dans le dépôt).
 
 > Note que ces instructions te guideront sur la façon de modifier le fichier nommé `portfolio.html` dans le même répertoire.
+
+Nouvelle branche
