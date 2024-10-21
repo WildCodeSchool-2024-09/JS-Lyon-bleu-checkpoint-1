@@ -130,4 +130,8 @@ nav {
   .desktop {
     display: none;
   }
+  .skills-set {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
