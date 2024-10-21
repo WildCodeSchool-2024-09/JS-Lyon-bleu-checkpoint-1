@@ -1,2 +1,4 @@
 const pp =document.getElementById("image fullStack")
-console.log(pp)
+pp.addEventListener("click", () => {
+    pp.src="./image/avatar.svg"
+});
