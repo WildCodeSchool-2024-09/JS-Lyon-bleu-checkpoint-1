@@ -8,7 +8,7 @@ thirdAngle(20, 80) doit retourner 80
 
 function thirdAngle(a, b) {
   const totalAngle = 180
-  let sumOfInitAngle = a + b
+  const sumOfInitAngle = a + b
   const finalAngle = totalAngle - sumOfInitAngle
   return finalAngle
 }
