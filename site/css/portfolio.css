@@ -115,6 +115,15 @@ nav {
 	color: var(--purple);
 }
 
+.disabled {
+	opacity: 50%;
+}
+
+.projects--section {
+	display: flex;
+	flex-direction: row;
+}
+
 .box {
 	width: 25%;
 	padding: calc(var(--gutter) * 2);
@@ -137,5 +146,9 @@ nav {
 	}
 	.column {
 		width: 100%;
+	}
+	.projects--section {
+		display: flex;
+		flex-direction: column;
 	}
 }
