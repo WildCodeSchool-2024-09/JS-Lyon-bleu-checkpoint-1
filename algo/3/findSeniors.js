@@ -1,9 +1,11 @@
 /*
-Voici un exemple de tableau de personnes. Écris une fonction qui à partir d'un tableau similaire reçu en paramètre renverra un nouveau tableau,
+Voici un exemple de tableau de personnes.
+Écris une fonction qui à partir d'un tableau similaire reçu en paramètre renverra un nouveau tableau,
 lui-même contenant deux sous-tableaux :
-- Le premier contient uniquement des devs web seniors
-- Le second ne contient que des data analysts seniors
+- Le premier contient uniquement des devs web seniors.
+- Le second ne contient que des data analysts seniors.
 (Étant donné qu'une personne est senior si elle a 5 ans d'expérience ou plus)
+*/
 
 const persons = [
   { name: 'Mary', experience: 2, job: 'web dev' },
@@ -23,10 +25,35 @@ const persons = [
   { name: 'Penelope', experience: 7, job: 'web dev' },
 ];
 
-*/
 
-function findSeniors(persons) {
-  // Your code here !
+
+function findSeniors(persons) 
+{
+
+  let TabToReturn = []; 
+  let onlyWebSenior = persons.filter( function(persons)
+  {
+      return(persons.job === 'web dev')
+  }).map(function (persons)
+  { 
+    return(persons.name)
+  });
+  
+  TabToReturn.push(onlyWebSenior);
+
+  let seniorDataAnalyst = persons.filter( function(persons)
+  {
+      return(persons.job === 'data analyst' && persons.experience > 4 )
+  }).map(function (persons)
+  { 
+    return(persons.name)
+  });
+
+  TabToReturn.push(seniorDataAnalyst);
+
+  return(TabToReturn)
 }
+
+console.log(findSeniors(persons));
 
 module.exports = findSeniors;
