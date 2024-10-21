@@ -76,6 +76,7 @@ nav {
 /* Modif pour que les colonnes des compétences soient l'une à côté de l'autre */
 .skills--columns {
 	display: flex;
+	flex-direction: row-reverse;
 	width: 100%;
 }
 
@@ -130,5 +131,11 @@ nav {
 @media screen and (max-width: 700px) {
 	#disappear {
 		display: none;
+	}
+	.skills--columns {
+		flex-direction: column-reverse;
+	}
+	.column {
+		width: 100%;
 	}
 }
