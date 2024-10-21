@@ -8,7 +8,8 @@ helloModif
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+  let googleNauraPasEteMonAmi("cherche mal", "ou ne comprend simplement pas")
+    return googleNauraPasEteMonAmi
 }
 
 module.exports = thirdAngle;
