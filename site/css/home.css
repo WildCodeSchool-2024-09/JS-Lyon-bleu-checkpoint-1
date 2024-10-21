@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: var(--textColor);
 }
 
@@ -118,3 +118,4 @@ button {
 .problem-no-visible {
   display: none;
 }
+
