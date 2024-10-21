@@ -23,15 +23,40 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
 .menu {
   display: flex;
+  justify-content: center;
+  text-align: right;
   margin-bottom: var(--gutter);
+  color:purple;
+}
+
+.prez {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  flex-direction: column;
+}
+
+#titre-dev {
+  font-weight:bolder;
+  font-size: larger;
 }
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .description {
@@ -107,4 +132,68 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled {
+  opacity: 0.33;
+}
+
+#change-h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#change-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 700px){
+  .desktop {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction:column-reverse;
+  }
+
+  .skills--title {
+    display: none;
+  }
+  .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+  }
+}
+
+
+@media screen and (min-width: 700px){
+  
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction:row-reverse;
+  }
+
+  .skills--title {
+    display: none;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
