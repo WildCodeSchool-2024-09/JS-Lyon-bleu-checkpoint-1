@@ -16,6 +16,7 @@ buttonName.style.backgroundColor = "#F7BED5";
 buttonName.style.padding = "10px 7px";
 const pinkBg = document.querySelectorAll(".pink-bg");
 const pinkText = document.querySelectorAll(".pink-text");
+const pinkLink = document.querySelectorAll(".list");
 
 let yourColor = null;
 let yourName = null;
@@ -26,10 +27,13 @@ buttonName.addEventListener("click", function () {
   firstName.innerText = yourName;
   firstName.style.color = "var(--light)";
   for (let i = 0; i < pinkBg.length; i++) {
-    pinkBg[i].style.backgroundColor = "#750ff7";
+    pinkBg[i].style.backgroundColor = "var(--purple)";
   }
-  buttonName.style.backgroundColor = "#750ff7";
+  buttonName.style.backgroundColor = "var(--purple)";
   for (let j = 0; j < pinkText.length; j++) {
-    pinkText[j].style.color = "#750ff7";
+    pinkText[j].style.color = "var(--purple)";
+  }
+  for (let k = 0; k < pinkLink.length; k++) {
+    pinkLink[k].style.color = "var(--purple)";
   }
 });
