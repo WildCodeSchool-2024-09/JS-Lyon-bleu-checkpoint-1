@@ -15,7 +15,7 @@ bouton.addEventListener('click', function(){
     firstname.innerText = `${prompt1}`;
     firstname.style.color = 'white';
     couleur.style.backgroundColor = `#${prompt2}`;
-    pinkbg.style.color = `#${prompt3}`
+    pinkbg.style.color = '#750ff7';
 
 });
 
