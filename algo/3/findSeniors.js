@@ -26,7 +26,18 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  // Your code here !
+  
+  for (let i = 0; i < persons.lenght; i++ ) {
+    if (persons.experience >= 5) {
+      return persons[i];
+    }
+  }
+
+  for (let i = 0; i < persons.lenght; i++ ) {
+    if (persons.experience < 5) {
+      return persons[i];
+}
+}
 }
 
 module.exports = findSeniors;
