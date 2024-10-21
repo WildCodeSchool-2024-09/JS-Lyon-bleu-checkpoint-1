@@ -59,3 +59,7 @@ buttonModify.addEventListener("click", function () {
   }
   buttonModify.style.backgroundColor = "var(--purple)";
 });
+
+const backDevTools = document.querySelector("#back-dev-tools");
+const buttonInput = document.createElement("input");
+//to be continued ^^
