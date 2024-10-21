@@ -26,9 +26,28 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  const result = [];
+  const webDevArray = [];
+  const dataArray = [];
 
-  return result;
+  // persons.forEach((person) => {
+  //   if (person.job === "web dev" && person.experience >= 5) {
+  //     webDevArray.push(person);
+  //   }
+  //   if (person.job === "data analyst" && person.experience >= 5) {
+  //     dataArray.push(person);
+  //   }
+  // });
+
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].job === "web dev" && persons[i].experience >= 5) {
+      webDevArray.push(persons[i]);
+    }
+    if (persons[i].job === "data analyst" && persons[i].experience >= 5) {
+      dataArray.push(persons[i]);
+    }
+  }
+
+  return [webDevArray, dataArray];
 }
 
 module.exports = findSeniors;

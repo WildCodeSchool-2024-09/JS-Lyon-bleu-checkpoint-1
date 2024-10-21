@@ -67,7 +67,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -107,4 +107,83 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+/* ---------------- CORRECTION  --------------------------- */
+
+/* Step 1  */
+
+@media screen and (min-width: 700px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Step 2  */
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#profil-picture {
+  margin: 20px;
+}
+
+/* Step 3  */
+
+@media screen and (max-width: 700px) {
+  #decoration {
+    display: none;
+  }
+}
+
+/* Step 4 et 6 */
+@media screen and (min-width: 700px) {
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+}
+
+/* Step 5  */
+
+@media screen and (max-width: 700px) {
+  .skills {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Step 7  */
+* .disabled {
+  opacity: 0.3;
+}
+
+/* Step 8  */
+@media screen and (min-width: 700px) {
+  .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+#modify-btn {
+  border: solid white 1px;
+  background-color: rgb(232, 155, 168);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.3rem;
 }
