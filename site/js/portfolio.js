@@ -9,6 +9,7 @@ changeAvatar.addEventListener('click', function () {
 const newName = document.getElementById('firstname');
 const button = document.querySelector('.button1');
 const changeBg = document.querySelector('.pink-bg');
+const changeAllText = document.querySelectorAll('.pink-text');
 
 button.addEventListener('click', function () {
 let resultName = prompt("Enter your name");
@@ -17,6 +18,7 @@ newName.innerHTML=resultName;
 newName.style.color='white';
 changeBg.style.background=resultColor;
 button.style.background=resultColor;
+changeAllText.style.color=resultColor;
 
 });
 
